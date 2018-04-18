@@ -1,5 +1,7 @@
 import React from 'react';
 import style from './App.css';
+import Title from '../components/Title';
+import uuid from 'uuid';
 
 class App extends React.Component {
     constructor(props){

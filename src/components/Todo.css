@@ -1,0 +1,23 @@
+.Todo {
+    background-color: #FFC0CB;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+button {
+	background-color: #FFCCFF;
+	color: #330000;
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 4px;
+	border: 2px solid #330000;
+}
+
+button:hover {
+    background-color: #330000; 
+    color: white;
+}
