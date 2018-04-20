@@ -1,11 +1,23 @@
 import React from 'react';
+import style from './Todo.css';
+import TodoForm from './TodoForm';
 
-const Todo = ({todo, remove}) => {
-	return(
-		<li>
-			{todo.text}
-			<button type="button" onClick={(e) => remove(todo.id)}>X</button>
-		</li>
-	);
+class Todo extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		return (
+			<li className = {style.Todo}>
+				{this.props.todo}
+				<button onClick = {event=> this.handleClick()}>Remove</button>
+			</li>	
+		)
+	}
+
+	handleClick(event) {
+		this.props.remove(this.props.id)
+	}
 }
 export default Todo;
